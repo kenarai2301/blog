@@ -18,4 +18,6 @@ Auth::routes();
 Route::get('/', 'BlogController@index')->name('home');
 Route::get('/show/{post}', 'BlogController@show')->name('show');
 Route::post('/show/{post}/comment', 'BlogController@commentStore');
+Route::get('/category/{category}', 'BlogController@category');
+Route::get('/search', 'BlogController@search');
 

@@ -288,12 +288,12 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 
 
 /* ---------------------------------
-14. SLIDER
+14. register 
 --------------------------------- */
 
-.slider{ height: 300px; width: 100%; background-image: url("/storage/images/register.jpg"); background-size: cover; }  
+.register-slider{ height: 300px; width: 100%; background-image: url("/storage/images/register.jpg"); background-size: cover; }  
  
-.slider .title{ color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,.3); }
+.register-slider .register-title{ color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,.3); }
 
 
 
@@ -347,11 +347,10 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 
 
 /* ---------------------------------
-16. SLIDER
+16. SHOW
 --------------------------------- */
 
-/* .slider{ height: 400px; width: 100%; background-image: url(../../images/slider-1-1600x900.jpg); background-size: cover; }   */
-
+.show-slider{ height: 400px; width: 100%; background-image: url("/storage/images/show.jpg"); background-size: cover; } 
 
  
 /* ---------------------------------
@@ -418,3 +417,12 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 	box-shadow: 0px 0px 5px rgba(0,0,0,.1); border: 1px solid #fff; background: #fff; color: #555; }
 
 .more-comment-btn:hover{ border-color: #ccc; }	
+
+
+/* ---------------------------------
+19. CATEGORY-SLIDER
+--------------------------------- */
+
+.category-slider{ height: 400px; width: 100%; background-image: url("/storage/images/category.jpg"); background-size: cover; }  
+ 
+.category-slider .category-title{ color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,.3); }

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="slider">
+<div class="show-slider">
 
 	</div><!-- slider -->
 

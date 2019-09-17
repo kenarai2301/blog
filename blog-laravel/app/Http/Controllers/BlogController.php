@@ -5,15 +5,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Comment;
+use App\Category;
 use Illuminate\Support\Facades\Auth;
 
 
 class BlogController extends Controller
 {
     public function index(){
+        $categories = Category::all();
         $posts = Post::all();
         $posts->load('category','user');
-        return view('blog.index')->with('posts',$posts);
+        return view('blog.index',[
+            'posts'=>$posts,
+            'categories'=>$categories
+        ]);
     }
     public function show (Post $post){
         $post->load('category','user','comments');
@@ -32,4 +37,18 @@ class BlogController extends Controller
         
         return redirect()->back();
     }
+
+    public function category(Category $category) {
+        $posts = Post::where('category_id',$category->id)->get();
+        
+        return view('blog.category',['posts'=>$posts,
+        'category'=>$category]);
+      }
+
+      public function search(Request $request)
+      {
+          $keyword = $request->input('keyword');
+          $posts = Post::where('title','LIKE',"%$keyword%")->get();
+          return view('blog.search',compact('posts','keyword'));
+      }
 }

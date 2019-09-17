@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="slider display-table center-text">
-        <h1 class="title display-table-cell"><b>新規登録</b></h1>
+<div class="register-slider display-table center-text">
+        <h1 class="register-title display-table-cell"><b>新規登録</b></h1>
 	</div><!-- slider -->
 
 	<section class="blog-area section">

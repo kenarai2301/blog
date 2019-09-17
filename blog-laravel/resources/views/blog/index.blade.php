@@ -4,15 +4,15 @@
   <div class="main-slider" >
 			<div class="swiper-container position-static" >
 				<div class="swiper-wrapper">
-				@foreach ($posts as $post)
+				@foreach ($categories as $category)
 						<div class="swiper-slide">
-							<a class="slider-category" href="#">
-								<div class="blog-image"><img src={{ $post->category->image }} alt="Blog Image"></div>
+							<a class="slider-category" href="{{ action('BlogController@category',$category->id) }}">
+								<div class="blog-image"><img src="{{ $category->image }}" alt="Blog Image"></div>
 
 								<div class="category">
 									<div class="display-table center-text">
 										<div class="display-table-cell">
-											<h3><b>{{ $post->category->category_name }}</b></h3>
+											<h3><b>{{ $category->category_name }}</b></h3>
 										</div>
 									</div>
 								</div>
@@ -45,11 +45,11 @@
 
 									<h4 class="title"><a href="{{ action('BlogController@show',$post) }}"><b>{{ $post->title }}</b></a></h4>
 
-									{{-- <ul class="post-footer">
-										<li><a href="#"><i class="ion-heart"></i>57</a></li>
-										<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-										<li><a href="#"><i class="ion-eye"></i>138</a></li>
-									</ul> --}}
+										{{-- <ul class="post-footer">
+											<li><a href="#"><i class="ion-heart"></i>57</a></li>
+											<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
+											<li><a href="#"><i class="ion-eye"></i>138</a></li>
+										</ul> --}}
 
 								</div><!-- blog-info -->
 							</div><!-- single-post -->

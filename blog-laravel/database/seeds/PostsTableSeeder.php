@@ -25,10 +25,16 @@ class PostsTableSeeder extends Seeder
                 'content' => 'test content2',
             ],
             [
-                'user_id' => 3,
+                'user_id' => 2,
                 'category_id' => 3,
                 'title' => 'title3',
                 'content' => 'test content3',
+            ],
+            [
+                'user_id' => 1,
+                'category_id' => 5,
+                'title' => 'hello',
+                'content' => 'aaa',
             ],
         ]);
     }
