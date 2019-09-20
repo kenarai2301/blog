@@ -26,14 +26,14 @@
 								<div class="left-area">
 									<a class="avatar" href="#"><img src="{{ $post->user->image }}" alt="Profile Image"></a>
 								</div>
-
+                 
 								<div class="middle-area">
 									<a class="name" href="#"><b>{{ $post->user->name }}</b></a>
 									<h6 class="date"></h6>
 								</div>
 
 							</div><!-- post-info -->
-
+                 <hr>
 							<p class="para">{{ $post->content }}</p>
 
 						</div><!-- post-top-area -->
@@ -105,11 +105,11 @@
 　　　　　　
               <h4><b>COMMENTS({{ $post->comments()->count() }})</b></h4>
               @if($post->comments->count()> 0)
-                  @foreach($post->comments as $comment)
-                        <div class="commnets-area ">
+                  
+                        <div class="commnets-area text-left">
 
                             <div class="comment">
-
+                              @foreach($post->comments as $comment)
                                 <div class="post-info">
 
                                     <div class="left-area">
@@ -118,17 +118,21 @@
 
                                     <div class="middle-area">
                                         <a class="name" href="#"><b>{{ $comment->user->name }}</b></a>
-                                        <h6 class="date">on {{ $comment->created_at->diffForHumans()}} </h6>
-                                    </div>
+                                        <h6 class="date">on {{ $comment->created_at}} </h6>
+																		</div>
+																		<div class="right-area">
+																			<h5 class="reply-btn" ><a href="#"><b>REPLY</b></a></h5>
+																		</div>
 
-                                </div><!-- post-info -->
+																</div><!-- post-info -->
+																<p>{{ $comment->comment }}</p>
 
-                                <p>{{ $comment->comment }}</p>
-
+                               @endforeach
+                                
                             </div>
 
                         </div><!-- commnets-area -->
-                  @endforeach
+                  
               @else
 
                 <div class="commnets-area ">

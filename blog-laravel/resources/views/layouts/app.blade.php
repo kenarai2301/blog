@@ -120,7 +120,9 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                              @csrf
                         </form></li>
-                        <li><a href="/">管理画面</a></li>
+                               <li><a href="#">管理画面</a></li>
+                            
+
                   @endguest
                  
                     

@@ -7,11 +7,16 @@
 require('./bootstrap');
 
 import Vue from 'vue';
-
-
-window.Vue = require('vue');
- import 'swiper/dist/css/swiper.css'
+import 'swiper/dist/css/swiper.css'
 import Swiper from 'swiper';
+
+
+
+
+
+
+
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -26,17 +31,13 @@ import Swiper from 'swiper';
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-const app = new Vue({
-    el: '#app',
-});
-
-
 
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
@@ -45,5 +46,7 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
-  });
+});
+
+
   

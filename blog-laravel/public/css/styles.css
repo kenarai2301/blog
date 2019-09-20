@@ -352,6 +352,7 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 
 .show-slider{ height: 400px; width: 100%; background-image: url("/storage/images/show.jpg"); background-size: cover; } 
 
+
  
 /* ---------------------------------
 17. BLOG POST
@@ -362,7 +363,7 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 .post-area .post-info .left-area{ height: 70px; width: 70px; border-radius: 100px; overflow: hidden; position: absolute;
 	top: 50%; margin-top: -35px; border: 6px solid #fff; box-shadow: 0px 0px 5px rgba(0,0,0,.3); }
 
-.post-area .post-info .middle-area{ padding-left: 90px; display: inline-block; }
+.post-area .post-info .middle-area{ padding-left: 20px; display: inline-block; text-align: left; }
 
 .post-area .post-info .date{ display: inline-block; color: #999; }
 
