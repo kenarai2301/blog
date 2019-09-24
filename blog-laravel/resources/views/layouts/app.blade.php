@@ -22,7 +22,7 @@
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
 <body>
-    <div id="app">
+    <div id="tpp">
         <header>
             <div class="container-fluid position-relative no-side-padding">
 
@@ -119,8 +119,12 @@
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                              @csrf
-                        </form></li>
-                        <li><a href="/">管理画面</a></li>
+                        </form>
+                    
+                    </li>
+                    <li><a href="{{ route('dashboard') }}">管理画面</a></li>
+                            
+
                   @endguest
                  
                     

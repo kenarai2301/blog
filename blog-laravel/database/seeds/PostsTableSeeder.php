@@ -32,10 +32,59 @@ class PostsTableSeeder extends Seeder
             ],
             [
                 'user_id' => 1,
-                'category_id' => 5,
+                'category_id' => 4,
                 'title' => 'hello',
                 'content' => 'aaa',
             ],
+            [
+                'user_id' => 3,
+                'category_id' => 5,
+                'title' => 'こんにちは',
+                'content' => '今日は晴れです',
+            ],
+            [
+                'user_id' => 1,
+                'category_id' => 6,
+                'title' => 'sample',
+                'content' => 'これはサンプルです',
+            ],
+            [
+                'user_id' => 2,
+                'category_id' => 7,
+                'title' => 'good',
+                'content' => 'これはテストです',
+            ],
+            [
+                'user_id' => 3,
+                'category_id' => 1,
+                'title' => 'sample',
+                'content' => 'これはテストです',
+            ],
+            [
+                'user_id' => 1,
+                'category_id' => 2,
+                'title' => 'hello',
+                'content' => 'これはテストです',
+            ],
+            [
+                'user_id' => 2,
+                'category_id' => 3,
+                'title' => 'こんにちは',
+                'content' => 'これはテストです',
+            ],
+            [
+                'user_id' => 3,
+                'category_id' => 4,
+                'title' => '2019',
+                'content' => 'これはテストです',
+            ],
+            [
+                'user_id' => 1,
+                'category_id' => 5,
+                'title' => '777',
+                'content' => 'これはテストです',
+            ],
+
         ]);
     }
 }

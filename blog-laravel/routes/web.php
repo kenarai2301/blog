@@ -21,3 +21,7 @@ Route::post('/show/{post}/comment', 'BlogController@commentStore');
 Route::get('/category/{category}', 'BlogController@category');
 Route::get('/search', 'BlogController@search');
 
+
+Route::get('/', function () {
+       return view('dashboard');
+  });
