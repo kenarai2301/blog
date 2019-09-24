@@ -22,6 +22,6 @@ Route::get('/category/{category}', 'BlogController@category');
 Route::get('/search', 'BlogController@search');
 
 
-// Route::get('/{any}', function () {
-//        return view('dashboard');
-//   })->where('any', '.*');
+Route::get('/', function () {
+       return view('dashboard');
+  });

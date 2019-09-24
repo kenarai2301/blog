@@ -1,23 +1,15 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
 
-require('./bootstrap');
 
+//import
 import Vue from 'vue';
 import 'swiper/dist/css/swiper.css'
 import Swiper from 'swiper';
-
-
-
-
-
-
-
-
-
+import App from './App.vue';
+import Vuetify from 'vuetify'
+import router from './router';
+import StatusCard from './components/StatusCard'
+// //use
+Vue.use(Vuetify)
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -29,8 +21,8 @@ import Swiper from 'swiper';
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
+//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+  Vue.component('stats-card',StatusCard)
 
 
 /**
@@ -49,4 +41,10 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-  
+new Vue({
+  router,
+  render: h => h(App),
+  vuetify: new Vuetify()
+}).$mount('#app')
+
+
